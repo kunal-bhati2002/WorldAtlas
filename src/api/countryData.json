@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 125800000,
+    "interestingFact": "Japan has more than 5 million vending machines."
+  },
+  {
+    "id": 2,
+    "countryName": "Brazil",
+    "capital": "Brasília",
+    "population": 214300000,
+    "interestingFact": "Brazil is home to the Amazon Rainforest, the largest rainforest in the world."
+  },
+  {
+    "id": 3,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 39000000,
+    "interestingFact": "Canada has the longest coastline of any country in the world."
+  },
+  {
+    "id": 4,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": 112000000,
+    "interestingFact": "Egypt is home to the only remaining Wonder of the Ancient World – the Great Pyramid of Giza."
+  },
+  {
+    "id": 5,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 26700000,
+    "interestingFact": "Australia is home to more kangaroos than people."
+  },
+  {
+    "id": 6,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 84000000,
+    "interestingFact": "Germany is known for having over 1,500 different types of sausages."
+  },
+  {
+    "id": 7,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1426000000,
+    "interestingFact": "India is the world’s largest democracy."
+  },
+  {
+    "id": 8,
+    "countryName": "South Africa",
+    "capital": "Pretoria",
+    "population": 61000000,
+    "interestingFact": "South Africa has three capitals: Pretoria, Cape Town, and Bloemfontein."
+  },
+  {
+    "id": 9,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": 59000000,
+    "interestingFact": "Italy is home to the world’s smallest country, Vatican City."
+  },
+  {
+    "id": 10,
+    "countryName": "Mexico",
+    "capital": "Mexico City",
+    "population": 128000000,
+    "interestingFact": "Chocolate originated in Mexico, dating back to the ancient Mayan and Aztec civilizations."
+  }
+]
