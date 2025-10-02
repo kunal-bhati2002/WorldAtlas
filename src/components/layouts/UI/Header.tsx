@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 function Header() {
     return (<>
-        <header className="flex flex-col text-center sm:flex-row justify-between items-center bg-gray-700 py-2 px-[10%]" >
+        <header className="flex flex-col text-center sm:flex-row justify-between items-center bg-[#202020] py-2 px-[10%]" >
             <h1 className="text-2xl">WorldAtlas</h1>
             <ul className="flex flex-col mt-2 gap-y-2 sm:flex-row gap-6">
                 <li><NavLink to="/"
