@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Find Us",
+    "icon": "FaLocationDot",
+    "details": "123 World Street, New Delhi, India"
+  },
+  {
+    "id": 2,
+    "title": "Call Us",
+    "icon": "FaPhoneAlt",
+    "details": "+91 98765 43210"
+  },
+  {
+    "id": 3,
+    "title": "Mail Us",
+    "icon": "FaEnvelope",
+    "details": "support@worldatlas.com"
+  },
+  {
+    "id": 4,
+    "title": "Follow Us",
+    "icon": "FaShareAlt",
+    "details": "Facebook | Instagram | Twitter"
+  }
+]
