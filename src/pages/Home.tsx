@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
+import About from "./About";
 
 function Home() {
     return (<>
@@ -18,6 +19,7 @@ function Home() {
                 <img src="/images/Logo.png" alt="Logo Photo" className="w-full max-w-sm mx-auto md:max-w-md lg:max-w-lg" />
             </div>
         </section>
+        <About />
     </>);
 }
 
