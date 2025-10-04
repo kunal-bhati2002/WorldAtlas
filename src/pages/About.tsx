@@ -18,17 +18,17 @@ function About() {
                                     className="rounded-lg p-6 border border-gray-700 bg-gradient-to-br from-[#080509] via-[#1a171c] to-[#080509]"
                                 >
                                     <h2 className="text-xl font-semibold">{curCountry.countryName}</h2>
-                                    <p className="text-gray-400">Capital :
+                                    <p className="text-gray-400">Capital :&nbsp;
                                         <span className="text-white">
                                             {curCountry.capital}
                                         </span>
                                     </p>
-                                    <p className="text-gray-400">Population :
+                                    <p className="text-gray-400">Population :&nbsp;
                                         <span className="text-white">
                                             {curCountry.population}
                                         </span>
                                     </p>
-                                    <p className="text-gray-400">Interesting Fact :
+                                    <p className="text-gray-400">Interesting Fact :&nbsp;
                                         <span className="text-white">
                                             {curCountry.interestingFact}
                                         </span>
