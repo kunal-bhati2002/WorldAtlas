@@ -1,9 +1,10 @@
 import footerData from "../../api/footerData.json";
-import { FaPhone, FaEnvelope, FaShareAlt, FaLocationDot } from "react-icons/fa6";
+import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt, FaShareAlt } from "react-icons/fa";
 
 const icons = {
     FaLocationDot: <FaLocationDot />,
-    FaPhone: <FaPhone />,
+    FaPhoneAlt: <FaPhoneAlt />,
     FaEnvelope: <FaEnvelope />,
     FaShareAlt: <FaShareAlt />
 };
