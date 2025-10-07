@@ -13,31 +13,28 @@ function Country() {
         startTransition(async () => {
             const res = await getCountryData();
             setCountries(res.data);
-        })
+        });
     }, []);
 
-    if (isPending) return <h1>Loading</h1>
+    if (isPending)
+        return (
+            <div className="flex justify-center items-center h-[60vh]">
+                <span className="text-xl font-semibold animate-pulse text-indigo-500">
+                    Loading countries...
+                </span>
+            </div>
+        );
 
-    // 🔍 Search function
-    const searchCountry = (country: any) => {
-        if (!search) return true; // if no search, include all
-        return country.name.common.toLowerCase().includes(search.toLowerCase());
-    };
+    const searchCountry = (country: any) =>
+        !search || country.name.common.toLowerCase().includes(search.toLowerCase());
 
-    // 🌍 Filter function
-    const filterByRegion = (country: any) => {
-        if (filter === "All") return true;
-        return country.region === filter;
-    };
+    const filterByRegion = (country: any) =>
+        filter === "All" || country.region === filter;
 
-    // ✅ Combine both filters
-    const filteredCountries = countries
-        .filter(searchCountry)
-        .filter(filterByRegion);
-        
-    return (<>
-        <section className="container mx-auto">
+    const filteredCountries = countries.filter(searchCountry).filter(filterByRegion);
 
+    return (
+        <section className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
             <SearchFilter
                 search={search}
                 setSearch={setSearch}
@@ -47,16 +44,24 @@ function Country() {
                 setCountries={setCountries}
             />
 
-            <h1 className="text-center text-4xl font-bold my-8">Country</h1>
-            <ul className="grid grid-cols-1 gap-6 p-4 sm:p-6 sm:grid-cols-2 sm:px-16 lg:grid-cols-3">
-                {
-                    filteredCountries.map((item: { name: any, flags: any, population: any, region: any, capital: any }) => {
-                        return <CountryCard country={item} key={item.name.official} />
-                    })
-                }
-            </ul>
+            <h1 className="text-center text-3xl sm:text-4xl font-bold my-8 text-indigo-500">
+                Countries
+            </h1>
+            <hr className="border-gray-700 mx-auto w-3/4 mb-6" />
+
+            {filteredCountries.length === 0 ? (
+                <p className="text-center text-gray-400 my-10">
+                    No countries found matching your criteria.
+                </p>
+            ) : (
+                <ul className="grid grid-cols-1 gap-8 p-4 sm:px-8 md:px-12 lg:px-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                    {filteredCountries.map((item: any) => (
+                        <CountryCard country={item} key={item.name.official} />
+                    ))}
+                </ul>
+            )}
         </section>
-    </>);
+    );
 }
 
-export default Country
+export default Country;
